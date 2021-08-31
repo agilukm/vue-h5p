@@ -152,7 +152,7 @@ export default {
       })
     },
     async getJSON (...url) {
-      const resp = await fetch(this.path + '/' + url.join('/'), { credentials: 'include' })
+      const resp = await fetch(this.path + '/' + url.join('/'))
       if (!resp.ok) {
         let body = {}
         try {
